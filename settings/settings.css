@@ -1,0 +1,145 @@
+/* Resetting margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #1a1a1a; /* Darker, neutral background */
+  color: #e0e0e0; /* Softer light gray text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #4a90e2; /* Soft blue title color */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #e0e0e0; /* Softer light gray text for subtitles */
+}
+
+label {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #bbb; /* Soft gray text for labels */
+}
+
+input[type="number"] {
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 80px;
+  border: 1px solid #444; /* Darker border for inputs */
+  border-radius: 5px;
+  background-color: #333; /* Dark background for input */
+  color: #e0e0e0; /* Light gray text inside input */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #28a745; /* Soft green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+#back-to-control {
+  margin-top: 30px;
+  background-color: #4a90e2; /* Soft blue for back button */
+}
+
+#back-to-control:hover {
+  background-color: #3498db; /* Slightly different shade of blue on hover */
+}
+
+.settings-section {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #2d2d2d; /* Darker background for sections */
+  border: 2px solid #444; /* Dark border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settings-section h2 {
+  margin-bottom: 10px;
+  color: #e0e0e0; /* Soft gray text for section headings */
+}
+
+#ip-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#ip-list li {
+  margin: 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333; /* Dark background for list items */
+  color: #e0e0e0; /* Light gray text */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#ip-list li:hover {
+  background-color: #444; /* Slightly lighter gray for hover effect */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Status container for displaying current settings */
+.status-container {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #2d2d2d; /* Darker background for status container */
+  border: 1px solid #4a90e2; /* Soft blue border for status */
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  color: #e0e0e0; /* Light gray text for status */
+}
+
+.status-container h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.status-container div {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
