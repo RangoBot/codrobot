@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+    font-family: 'Courier New', monospace;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .background-img {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: none;
+  }
+  
+  .overlay {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    color: #00ffc8;
+    text-align: center;
+    z-index: 1;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+  }
+  
+  .progress {
+    width: 0%;
+    height: 100%;
+    background-color: #00ffc8;
+    animation: load 5s linear forwards;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  @keyframes load {
+    from { width: 0%; }
+    to { width: 100%; }
+  }
+  
