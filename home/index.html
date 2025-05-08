@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Home Page</h1>
+    <p>This is a basic web application</p>
+  </header>
+
+  <section id="main-content">
+    <button id="settingsButton" title="Settings" onclick="goToSettings()">⚙️</button>
+    <div id="grid"></div>
+    <div id="controls">
+      <div class="row center">
+        <button onclick="sendCommand('F')">↑</button>
+      </div>
+      <div class="row space">
+        <button onclick="sendCommand('L')">←</button>
+        <button onclick="sendCommand('S')">⏹</button>
+        <button onclick="sendCommand('R')">→</button>
+      </div>
+      <div class="row center">
+        <button onclick="sendCommand('B')">↓</button>
+      </div>
+    </div>
+    
+    <div id="valueDisplay"></div> <!-- ADD THIS -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Web App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+<div class="status-container">
+  <h3>Current Settings:</h3>
+  <div id="status-grid"></div>
+  <div id="status-position"></div>
+  <div id="status-ip"></div>
+</div>
+</html>
